@@ -14,6 +14,7 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QHeaderView>
+#include <QtWidgets/QListView>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
@@ -36,11 +37,11 @@ public:
     QAction *actionPaste;
     QAction *actionSelect;
     QWidget *centralWidget;
+    QListView *listView;
     QMenuBar *menuBar;
     QMenu *menuFile;
     QMenu *menuEdit;
     QMenu *menuVST;
-    QMenu *menuOptions;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
 
@@ -50,6 +51,23 @@ public:
             oiu_crossqtClass->setObjectName(QStringLiteral("oiu_crossqtClass"));
         oiu_crossqtClass->resize(960, 540);
         oiu_crossqtClass->setMinimumSize(QSize(960, 540));
+        QPalette palette;
+        QBrush brush(QColor(255, 255, 255, 255));
+        brush.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::WindowText, brush);
+        QBrush brush1(QColor(25, 25, 25, 255));
+        brush1.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::Base, brush1);
+        palette.setBrush(QPalette::Active, QPalette::Window, brush1);
+        palette.setBrush(QPalette::Inactive, QPalette::WindowText, brush);
+        palette.setBrush(QPalette::Inactive, QPalette::Base, brush1);
+        palette.setBrush(QPalette::Inactive, QPalette::Window, brush1);
+        QBrush brush2(QColor(120, 120, 120, 255));
+        brush2.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Disabled, QPalette::WindowText, brush2);
+        palette.setBrush(QPalette::Disabled, QPalette::Base, brush1);
+        palette.setBrush(QPalette::Disabled, QPalette::Window, brush1);
+        oiu_crossqtClass->setPalette(palette);
         QIcon icon;
         QString iconThemeName = QStringLiteral("OIU");
         if (QIcon::hasThemeIcon(iconThemeName)) {
@@ -78,6 +96,75 @@ public:
         actionSelect->setObjectName(QStringLiteral("actionSelect"));
         centralWidget = new QWidget(oiu_crossqtClass);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
+        listView = new QListView(centralWidget);
+        listView->setObjectName(QStringLiteral("listView"));
+        listView->setGeometry(QRect(0, -3, 70, 491));
+        listView->setMinimumSize(QSize(70, 488));
+        listView->setMaximumSize(QSize(70, 16777215));
+        QPalette palette1;
+        palette1.setBrush(QPalette::Active, QPalette::WindowText, brush);
+        QBrush brush3(QColor(41, 41, 41, 255));
+        brush3.setStyle(Qt::SolidPattern);
+        palette1.setBrush(QPalette::Active, QPalette::Button, brush3);
+        palette1.setBrush(QPalette::Active, QPalette::Light, brush1);
+        QBrush brush4(QColor(57, 57, 57, 255));
+        brush4.setStyle(Qt::SolidPattern);
+        palette1.setBrush(QPalette::Active, QPalette::Midlight, brush4);
+        QBrush brush5(QColor(9, 9, 9, 255));
+        brush5.setStyle(Qt::SolidPattern);
+        palette1.setBrush(QPalette::Active, QPalette::Dark, brush5);
+        QBrush brush6(QColor(32, 32, 32, 255));
+        brush6.setStyle(Qt::SolidPattern);
+        palette1.setBrush(QPalette::Active, QPalette::Mid, brush6);
+        palette1.setBrush(QPalette::Active, QPalette::Text, brush);
+        QBrush brush7(QColor(0, 0, 0, 255));
+        brush7.setStyle(Qt::SolidPattern);
+        palette1.setBrush(QPalette::Active, QPalette::ButtonText, brush7);
+        palette1.setBrush(QPalette::Active, QPalette::Base, brush1);
+        palette1.setBrush(QPalette::Active, QPalette::Window, brush1);
+        QBrush brush8(QColor(45, 45, 45, 255));
+        brush8.setStyle(Qt::SolidPattern);
+        palette1.setBrush(QPalette::Active, QPalette::Shadow, brush8);
+        QBrush brush9(QColor(215, 0, 115, 255));
+        brush9.setStyle(Qt::SolidPattern);
+        palette1.setBrush(QPalette::Active, QPalette::Highlight, brush9);
+        QBrush brush10(QColor(0, 89, 255, 255));
+        brush10.setStyle(Qt::SolidPattern);
+        palette1.setBrush(QPalette::Active, QPalette::Link, brush10);
+        QBrush brush11(QColor(34, 34, 34, 255));
+        brush11.setStyle(Qt::SolidPattern);
+        palette1.setBrush(QPalette::Active, QPalette::LinkVisited, brush11);
+        palette1.setBrush(QPalette::Inactive, QPalette::WindowText, brush);
+        palette1.setBrush(QPalette::Inactive, QPalette::Button, brush3);
+        palette1.setBrush(QPalette::Inactive, QPalette::Light, brush1);
+        palette1.setBrush(QPalette::Inactive, QPalette::Midlight, brush4);
+        palette1.setBrush(QPalette::Inactive, QPalette::Dark, brush5);
+        palette1.setBrush(QPalette::Inactive, QPalette::Mid, brush6);
+        palette1.setBrush(QPalette::Inactive, QPalette::Text, brush);
+        palette1.setBrush(QPalette::Inactive, QPalette::ButtonText, brush7);
+        palette1.setBrush(QPalette::Inactive, QPalette::Base, brush1);
+        palette1.setBrush(QPalette::Inactive, QPalette::Window, brush1);
+        palette1.setBrush(QPalette::Inactive, QPalette::Shadow, brush8);
+        palette1.setBrush(QPalette::Inactive, QPalette::Highlight, brush9);
+        palette1.setBrush(QPalette::Inactive, QPalette::Link, brush10);
+        palette1.setBrush(QPalette::Inactive, QPalette::LinkVisited, brush11);
+        palette1.setBrush(QPalette::Disabled, QPalette::WindowText, brush5);
+        palette1.setBrush(QPalette::Disabled, QPalette::Button, brush3);
+        palette1.setBrush(QPalette::Disabled, QPalette::Light, brush1);
+        palette1.setBrush(QPalette::Disabled, QPalette::Midlight, brush4);
+        palette1.setBrush(QPalette::Disabled, QPalette::Dark, brush5);
+        palette1.setBrush(QPalette::Disabled, QPalette::Mid, brush6);
+        palette1.setBrush(QPalette::Disabled, QPalette::Text, brush5);
+        palette1.setBrush(QPalette::Disabled, QPalette::ButtonText, brush5);
+        palette1.setBrush(QPalette::Disabled, QPalette::Base, brush1);
+        palette1.setBrush(QPalette::Disabled, QPalette::Window, brush1);
+        palette1.setBrush(QPalette::Disabled, QPalette::Shadow, brush8);
+        QBrush brush12(QColor(0, 120, 215, 255));
+        brush12.setStyle(Qt::SolidPattern);
+        palette1.setBrush(QPalette::Disabled, QPalette::Highlight, brush12);
+        palette1.setBrush(QPalette::Disabled, QPalette::Link, brush10);
+        palette1.setBrush(QPalette::Disabled, QPalette::LinkVisited, brush11);
+        listView->setPalette(palette1);
         oiu_crossqtClass->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(oiu_crossqtClass);
         menuBar->setObjectName(QStringLiteral("menuBar"));
@@ -88,8 +175,6 @@ public:
         menuEdit->setObjectName(QStringLiteral("menuEdit"));
         menuVST = new QMenu(menuBar);
         menuVST->setObjectName(QStringLiteral("menuVST"));
-        menuOptions = new QMenu(menuBar);
-        menuOptions->setObjectName(QStringLiteral("menuOptions"));
         oiu_crossqtClass->setMenuBar(menuBar);
         mainToolBar = new QToolBar(oiu_crossqtClass);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
@@ -101,7 +186,6 @@ public:
         menuBar->addAction(menuFile->menuAction());
         menuBar->addAction(menuEdit->menuAction());
         menuBar->addAction(menuVST->menuAction());
-        menuBar->addAction(menuOptions->menuAction());
         menuFile->addAction(actionNew);
         menuFile->addSeparator();
         menuFile->addAction(actionOpen);
@@ -134,8 +218,7 @@ public:
         actionSelect->setText(QApplication::translate("oiu_crossqtClass", "Select", Q_NULLPTR));
         menuFile->setTitle(QApplication::translate("oiu_crossqtClass", "File", Q_NULLPTR));
         menuEdit->setTitle(QApplication::translate("oiu_crossqtClass", "Edit", Q_NULLPTR));
-        menuVST->setTitle(QApplication::translate("oiu_crossqtClass", "VST", Q_NULLPTR));
-        menuOptions->setTitle(QApplication::translate("oiu_crossqtClass", "Options", Q_NULLPTR));
+        menuVST->setTitle(QApplication::translate("oiu_crossqtClass", "Options", Q_NULLPTR));
     } // retranslateUi
 
 };

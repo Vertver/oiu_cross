@@ -5,3 +5,4 @@ oiu_crossqt::oiu_crossqt(QWidget *parent)
 {
 	ui.setupUi(this);
 }
+

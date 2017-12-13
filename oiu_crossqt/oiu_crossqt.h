@@ -7,6 +7,7 @@ class oiu_crossqt : public QMainWindow
 {
 	Q_OBJECT
 
+
 public:
 	oiu_crossqt(QWidget *parent = Q_NULLPTR);
 
