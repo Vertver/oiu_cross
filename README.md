@@ -1,4 +1,5 @@
-# OIU Cross-platform DAW application. License - GPL v3.0
+# OIU Cross-platform DAW application. 
+License - GPL v3.0
 
 Work on Windows, MacOS and Linux OS.
 
