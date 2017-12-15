@@ -21,6 +21,7 @@ To compile the project you must:
 **Windows**
 
 * Install the newest version of Microsoft Visual Studio (Now it's 15.5) and Qt (5.9.2) or newer.
+* Clone solution https://github.com/Vertver/oiu_cross.gi
 * Open the Solution of OIU project (oiu_cross.sln)
 * Make links to include-files, libraries and dynamic libraries
 * Compile all solution (all DLL's and oiu_cross.exe)
