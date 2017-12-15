@@ -16,6 +16,7 @@ The code may contains C# and JS code.
 
 # How to compile? 
 
+[Here :)](https://github.com/Vertver/oiu_cross/wiki/Compile)
 To compile the project you must:
 
 **Windows**
