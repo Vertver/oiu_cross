@@ -78,6 +78,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
       </PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="load_file_portaudio.cxx" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="oiu_crossqt.cpp" />
   </ItemGroup>

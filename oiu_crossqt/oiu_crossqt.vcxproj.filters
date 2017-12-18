@@ -42,6 +42,9 @@
     <ClCompile Include="GeneratedFiles\qrc_oiu_crossqt.cpp">
       <Filter>qt</Filter>
     </ClCompile>
+    <ClCompile Include="load_file_portaudio.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="oiu_crossqt.h">
