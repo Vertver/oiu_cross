@@ -8,17 +8,21 @@
 #include <QGridLayout>
 #include <QDebug>
 #include <QComboBox>
-
+#include <QStatusBar>
+#include <QtGui>
 class oiu_crossqt : public QMainWindow
 {
 	Q_OBJECT
 
+	//private:
+	//QLabel* _DeviceStatus;
 
 public:
 	oiu_crossqt(QWidget *parent = Q_NULLPTR);
 
 private:
 	Ui::oiu_crossqtClass ui;
+	//oiu_crossqt(QWidget * parent);
 };
 
 struct DeviceInfo	// Get info about audio device
@@ -45,6 +49,8 @@ public:
 	void updateDetails(int i);
 	void refreshDevices();
 
+	//void QMainWindow::createStatusBar();
+
 private:
 	QList<DeviceInfo>   _devices;
 
@@ -55,3 +61,7 @@ private:
 	QGridLayout*        mainlayout;
 	QComboBox*          devicecombo;
 };
+
+
+
+
