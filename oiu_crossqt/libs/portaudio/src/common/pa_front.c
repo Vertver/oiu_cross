@@ -1687,7 +1687,7 @@ PaError Pa_WriteStream( PaStream* stream,
     {
         if( frames == 0 )
         {
-            /* @todo Should we not allow the implementation to signal any underflow condition? see: http://www.portaudio.com/trac/ticket/116*/
+			// Что ты здесь забыл, чел?
             result = paNoError;
         }
         else if( buffer == 0 )

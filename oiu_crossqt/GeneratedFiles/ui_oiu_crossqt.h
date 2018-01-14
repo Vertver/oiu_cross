@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'oiu_crossqt.ui'
 **
-** Created by: Qt User Interface Compiler version 5.9.2
+** Created by: Qt User Interface Compiler version 5.10.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -305,42 +305,42 @@ public:
 
     void retranslateUi(QMainWindow *oiu_crossqtClass)
     {
-        oiu_crossqtClass->setWindowTitle(QApplication::translate("oiu_crossqtClass", "oiu_crossqt", Q_NULLPTR));
+        oiu_crossqtClass->setWindowTitle(QApplication::translate("oiu_crossqtClass", "oiu_crossqt", nullptr));
 #ifndef QT_NO_STATUSTIP
         oiu_crossqtClass->setStatusTip(QString());
 #endif // QT_NO_STATUSTIP
-        actionNew->setText(QApplication::translate("oiu_crossqtClass", "New", Q_NULLPTR));
+        actionNew->setText(QApplication::translate("oiu_crossqtClass", "New", nullptr));
 #ifndef QT_NO_SHORTCUT
-        actionNew->setShortcut(QApplication::translate("oiu_crossqtClass", "Ctrl+N", Q_NULLPTR));
+        actionNew->setShortcut(QApplication::translate("oiu_crossqtClass", "Ctrl+N", nullptr));
 #endif // QT_NO_SHORTCUT
-        actionOpen->setText(QApplication::translate("oiu_crossqtClass", "Open", Q_NULLPTR));
+        actionOpen->setText(QApplication::translate("oiu_crossqtClass", "Open", nullptr));
 #ifndef QT_NO_SHORTCUT
-        actionOpen->setShortcut(QApplication::translate("oiu_crossqtClass", "Ctrl+O", Q_NULLPTR));
+        actionOpen->setShortcut(QApplication::translate("oiu_crossqtClass", "Ctrl+O", nullptr));
 #endif // QT_NO_SHORTCUT
-        actionSave->setText(QApplication::translate("oiu_crossqtClass", "Save", Q_NULLPTR));
+        actionSave->setText(QApplication::translate("oiu_crossqtClass", "Save", nullptr));
 #ifndef QT_NO_SHORTCUT
-        actionSave->setShortcut(QApplication::translate("oiu_crossqtClass", "Ctrl+S", Q_NULLPTR));
+        actionSave->setShortcut(QApplication::translate("oiu_crossqtClass", "Ctrl+S", nullptr));
 #endif // QT_NO_SHORTCUT
-        actionSave_As->setText(QApplication::translate("oiu_crossqtClass", "Save As...", Q_NULLPTR));
+        actionSave_As->setText(QApplication::translate("oiu_crossqtClass", "Save As...", nullptr));
 #ifndef QT_NO_SHORTCUT
-        actionSave_As->setShortcut(QApplication::translate("oiu_crossqtClass", "Ctrl+Shift+S", Q_NULLPTR));
+        actionSave_As->setShortcut(QApplication::translate("oiu_crossqtClass", "Ctrl+Shift+S", nullptr));
 #endif // QT_NO_SHORTCUT
-        actionSave_and_exit->setText(QApplication::translate("oiu_crossqtClass", "Save and Exit", Q_NULLPTR));
+        actionSave_and_exit->setText(QApplication::translate("oiu_crossqtClass", "Save and Exit", nullptr));
 #ifndef QT_NO_SHORTCUT
-        actionSave_and_exit->setShortcut(QApplication::translate("oiu_crossqtClass", "Ctrl+Alt+S", Q_NULLPTR));
+        actionSave_and_exit->setShortcut(QApplication::translate("oiu_crossqtClass", "Ctrl+Alt+S", nullptr));
 #endif // QT_NO_SHORTCUT
-        actionExit->setText(QApplication::translate("oiu_crossqtClass", "Exit", Q_NULLPTR));
-        actionCopy->setText(QApplication::translate("oiu_crossqtClass", "Copy", Q_NULLPTR));
+        actionExit->setText(QApplication::translate("oiu_crossqtClass", "Exit", nullptr));
+        actionCopy->setText(QApplication::translate("oiu_crossqtClass", "Copy", nullptr));
 #ifndef QT_NO_SHORTCUT
-        actionCopy->setShortcut(QApplication::translate("oiu_crossqtClass", "Ctrl+C", Q_NULLPTR));
+        actionCopy->setShortcut(QApplication::translate("oiu_crossqtClass", "Ctrl+C", nullptr));
 #endif // QT_NO_SHORTCUT
-        actionPaste->setText(QApplication::translate("oiu_crossqtClass", "Paste", Q_NULLPTR));
+        actionPaste->setText(QApplication::translate("oiu_crossqtClass", "Paste", nullptr));
 #ifndef QT_NO_SHORTCUT
-        actionPaste->setShortcut(QApplication::translate("oiu_crossqtClass", "Ctrl+V", Q_NULLPTR));
+        actionPaste->setShortcut(QApplication::translate("oiu_crossqtClass", "Ctrl+V", nullptr));
 #endif // QT_NO_SHORTCUT
-        actionSelect->setText(QApplication::translate("oiu_crossqtClass", "Select", Q_NULLPTR));
+        actionSelect->setText(QApplication::translate("oiu_crossqtClass", "Select", nullptr));
 #ifndef QT_NO_SHORTCUT
-        actionSelect->setShortcut(QApplication::translate("oiu_crossqtClass", "Ctrl+A", Q_NULLPTR));
+        actionSelect->setShortcut(QApplication::translate("oiu_crossqtClass", "Ctrl+A", nullptr));
 #endif // QT_NO_SHORTCUT
 #ifndef QT_NO_TOOLTIP
         listTools->setToolTip(QString());
@@ -348,10 +348,10 @@ public:
 #ifndef QT_NO_STATUSTIP
         listTools->setStatusTip(QString());
 #endif // QT_NO_STATUSTIP
-        menuFile->setTitle(QApplication::translate("oiu_crossqtClass", "File", Q_NULLPTR));
-        menuEdit->setTitle(QApplication::translate("oiu_crossqtClass", "Edit", Q_NULLPTR));
-        menuOptions->setTitle(QApplication::translate("oiu_crossqtClass", "Options", Q_NULLPTR));
-        menuHel->setTitle(QApplication::translate("oiu_crossqtClass", "Help", Q_NULLPTR));
+        menuFile->setTitle(QApplication::translate("oiu_crossqtClass", "File", nullptr));
+        menuEdit->setTitle(QApplication::translate("oiu_crossqtClass", "Edit", nullptr));
+        menuOptions->setTitle(QApplication::translate("oiu_crossqtClass", "Options", nullptr));
+        menuHel->setTitle(QApplication::translate("oiu_crossqtClass", "Help", nullptr));
 #ifndef QT_NO_STATUSTIP
         statusBar->setStatusTip(QString());
 #endif // QT_NO_STATUSTIP

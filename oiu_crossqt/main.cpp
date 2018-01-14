@@ -1,6 +1,6 @@
 #include "oiu_crossqt.h"
 #include "ui_oiu_crossqt.h"
-#include "portaudio.h"
+//#include "portaudio.h"
 #include <QStatusBar>
 #include <QAction>
 #include <QtCore>
@@ -17,6 +17,4 @@ int main(int argc, char *argv[])
 }
 
 // Main Code
-
-
 

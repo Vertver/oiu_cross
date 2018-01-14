@@ -1,2 +1,7 @@
-﻿  load_file_portaudio.cxx
-  oiu_crossqt.vcxproj -> E:\OIU\Repos\oiu_crossqt\oiu_cross\x64\Debug\oiu_crossqt.exe
+﻿  Moc'ing oiu_crossqt.h...
+  moc_oiu_crossqt.cpp
+  load_file_portaudio.cxx
+  main.cpp
+  oiu_crossqt.cpp
+  Создание кода...
+  oiu_crossqt.vcxproj -> G:\srcs\oiu_cross-master\x64\Debug\oiu_crossqt.exe

@@ -45,9 +45,9 @@ public:
 	void getDeviceInfo();
 
 	public slots:
-	void streamButton();
-	void updateDetails(int i);
-	void refreshDevices();
+	//void streamButton();
+	//void updateDetails(int i);
+	//void refreshDevices();
 
 	//void QMainWindow::createStatusBar();
 
